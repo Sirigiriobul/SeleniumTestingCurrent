@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Log4j.properties&apos; to &apos;Log4jProperties&apos;&#x0D;&#x0A;- Original project: &apos;basicTesting&apos;&#x0D;&#x0A;- Destination element: &apos;Log4jProperties&apos;&#x0D;&#x0A;- Original element: &apos;Log4j.properties&apos;" description="Copy file" element1="properties/Log4j.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1677498469299" target="/applicationTesting/Log4jProperties" units="0" version="1.0"/>
+</session>

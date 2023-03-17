@@ -1,0 +1,27 @@
+package com.orangeHrm;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LogInOrangeHrm {
+public static void main(String[] args) throws IOException {
+	System.setProperty("webdriver.chrome.driver", "./bowserDriverFiles/chromedriver.exe");
+	WebDriver driver;
+	driver=new ChromeDriver();
+	FileInputStream file=new FileInputStream("./excelOperation");
+	XSSFWorkbook workbook =new XSSFWorkbook(file);
+	XSSFSheet sheet=workbook.getSheet("sheet1");
+	Row row=sheet.getRow(0);
+Cell	cell=row.getCell(0);
+String data=cell.getStringCellValue();
+System.out.println(data);
+	
+}
+}
